@@ -1,0 +1,16 @@
+<layer-list xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:drawable="@drawable/circle_silver"
+      android:left="0dp" android:top="6dp"
+      android:right="26dp" android:bottom="6dp"/>
+
+<item android:drawable="@drawable/circle_silver"
+      android:left="13dp" android:top="6dp"
+      android:right="13dp" android:bottom="6dp"/>
+
+<item android:drawable="@drawable/circle_silver"
+      android:left="26dp" android:right="0dp"
+      android:top="6dp" android:bottom="6dp"/>
+
+</layer-list>

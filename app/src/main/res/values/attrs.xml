@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RTextView">
+        <attr name="RFonts" format="enum">
+            <enum name="LIGHT" value="0"/>
+            <enum name="REGULAR" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

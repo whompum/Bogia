@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bogia_blue">#2196f3</color>
+    <color name="bogia_green">#01b37c</color>
+    <color name="bogia_red">#f44336</color>
+    <color name="bogia_orange">#ff9955</color>
+    <color name="bogia_silver">#999999</color>
+
+</resources>

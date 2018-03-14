@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="bottom"
+    android:columnCount="@integer/players_col_count"
+    android:rowCount="@integer/players_row_count"
+    android:padding="@dimen/screen_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.younivibes.bogia.Widgets.RTextView
+       style="@style/StyleYouLabel"
+       android:layout_gravity="start"
+       android:id="@id/id_player_one_you_label"
+       android:layout_row="0"
+       android:layout_column="0" />
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StylePlayerName"
+        tools:text="BamGuy12"
+        android:id="@id/id_player_one"
+        android:layout_column="0"
+        android:layout_row="1"/>
+
+    <com.younivibes.bogia.Widgets.TimelessWave
+        style="@style/StyleTimelessWave.Start"
+        android:id="@id/id_player_one_waiting"
+        android:layout_column="1"
+        android:layout_row="1" />
+
+
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StyleYouLabel"
+        android:id="@id/id_player_two_you_label"
+        android:layout_gravity="end"
+        android:layout_column="9"
+        android:layout_row="0"/>
+
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StylePlayerName"
+        tools:text="Jaxx101"
+        android:id="@id/id_player_two"
+        android:layout_row="1"
+        android:layout_column="9" />
+
+    <com.younivibes.bogia.Widgets.TimelessWave
+        style="@style/StyleTimelessWave.End"
+        android:id="@id/id_player_two_waiting"
+        android:layout_row="1"
+        android:layout_column="8" />
+
+</GridLayout>

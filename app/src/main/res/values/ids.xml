@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <item name="zero" type="id"/>
+    <item name="one" type="id"/>
+    <item name="two" type="id"/>
+
+    <item name="three" type="id"/>
+    <item name="four" type="id"/>
+    <item name="five" type="id"/>
+
+    <item name="six" type="id"/>
+    <item name="seven" type="id"/>
+    <item name="eight" type="id"/>
+
+    <item name="id_timer_layout" type="id"/>
+
+
+    <item name="id_drawer_toggle" type="id"/>
+    <item name="id_drawer" type="id"/>
+
+    <item name="id_match_status_container" type="id"/>
+    <item name="id_match_countdown" type="id"/>
+    <item name="id_match_timer" type="id"/>
+    <item name="id_match_status_display" type="id"/>
+
+    <item name="id_board" type="id"/>
+
+    <item name="status_display" type="id"/>
+
+    <item name="id_sign_out" type="id"/>
+
+    <item name="id_player_one_you_label" type="id"/>
+    <item name="id_player_two_you_label" type="id"/>
+    <item name="id_player_one" type="id"/>
+    <item name="id_player_two" type="id"/>
+
+    <item name="id_player_one_waiting" type="id"/>
+    <item name="id_player_two_waiting" type="id"/>
+
+    <item name="id_drawer_content_container" type="id"/>
+    <item name="id_drawer_user_actions_container" type="id"/>
+    <item name="id_drawer_you" type="id"/>
+    <item name="id_drawer_total_matches" type="id"/>
+    <item name="id_random_match" type="id"/>
+    <item name="id_search_match" type="id"/>
+    <item name="id_ai" type="id"/>
+    <item name="id_games_won_label" type="id"/>
+    <item name="id_games_won_value" type="id"/>
+    <item name="id_games_lost_label" type="id"/>
+    <item name="id_games_lost_value" type="id"/>
+    <item name="id_games_tied_label" type="id"/>
+    <item name="id_games_tied_value" type="id"/>
+
+
+    <item name="id_search_container" type="id"/>
+    <item name="id_search_back_arrow" type="id"/>
+    <item name="id_search_editor" type="id"/>
+    <item name="id_search_recycler" type="id"/>
+    <item name="id_search_item" type="id"/>
+
+
+    <item name="id_username_editor" type="id"/>
+    <item name="id_email_editor" type="id"/>
+    <item name="id_password_editor" type="id"/>
+
+    <item name="id_login_button" type="id"/>
+    <item name="id_signup_button" type="id"/>
+
+
+</resources>

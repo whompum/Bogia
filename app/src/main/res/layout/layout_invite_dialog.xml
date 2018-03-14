@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:background="#d1d1d1"
+        android:layout_weight="1"
+        android:paddingTop="36dp"
+        android:paddingBottom="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <EditText
+            style="@style/StyleSearchHere"
+            android:hint="enter player name"
+            android:id="@+id/id_search_editor"
+            android:gravity="center"
+            android:textColorHint="@color/bogia_blue"
+            android:textColor="@color/bogia_blue"
+            android:background="@android:color/transparent"
+            android:maxLength="@integer/username_length"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:paddingTop="36dp"
+        android:paddingBottom="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <com.younivibes.bogia.Widgets.RTextView
+            style="@style/StyleSpecialTextDisplay.StyleOvalText.StyleNewMatch"
+            android:background="@drawable/drawable_invite_button_selector"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:id="@+id/id_dialog_invite_button"
+            android:text="@string/invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

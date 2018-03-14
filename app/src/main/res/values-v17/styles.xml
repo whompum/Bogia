@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <style name="StyleBoardPiece.MiddleCol">
+        <item name="android:layout_marginStart">@dimen/piece_margin</item>
+        <item name="android:layout_marginEnd">@dimen/piece_margin</item>
+    </style>
+
+    <style name="StyleBoardPiece.MiddleRow.MiddleRowCol">
+        <item name="android:layout_marginStart">@dimen/piece_margin</item>
+        <item name="android:layout_marginEnd">@dimen/piece_margin</item>
+    </style>
+
+</resources>

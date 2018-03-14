@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="piece_size">60dp</dimen>
+    <dimen name="piece_margin">16dp</dimen>
+    <dimen name="screen_padding">16dp</dimen>
+
+    <dimen name="timelessWaveMargin">8dp</dimen>
+
+    <dimen name="login_signup_text_size">18sp</dimen>
+    <dimen name="login_signup_horizontal_offset">48dp</dimen>
+    <dimen name="login_singup_vertical_padding">6dp</dimen>
+
+</resources>

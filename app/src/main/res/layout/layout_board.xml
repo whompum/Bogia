@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:columnCount="@integer/board_col_count"
+    android:rowCount="@integer/board_row_count"
+    android:id="@id/id_board"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View style="@style/StyleBoardPiece" android:id="@id/zero"/>
+    <View style="@style/StyleBoardPiece.MiddleCol" android:id="@id/one"/>
+    <View style="@style/StyleBoardPiece" android:id="@id/two"/>
+
+    <View style="@style/StyleBoardPiece.MiddleRow" android:id="@id/three"/>
+    <View style="@style/StyleBoardPiece.MiddleRow.MiddleRowCol" android:id="@id/four"/>
+    <View style="@style/StyleBoardPiece.MiddleRow" android:id="@id/five"/>
+
+    <View style="@style/StyleBoardPiece" android:id="@id/six"/>
+    <View style="@style/StyleBoardPiece.MiddleCol" android:id="@id/seven"/>
+    <View style="@style/StyleBoardPiece" android:id="@id/eight"/>
+
+</GridLayout>

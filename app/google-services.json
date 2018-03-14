@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "544036927269",
+    "firebase_url": "https://bogia-351bd.firebaseio.com",
+    "project_id": "bogia-351bd",
+    "storage_bucket": "bogia-351bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544036927269:android:032dd69eb390c4b0",
+        "android_client_info": {
+          "package_name": "com.younivibes.bogia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544036927269-bsv0nvudp7b6l1q4ip6tvd5at1m41n4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpKQuGOleojEK9dpRPdCiW6169wG8XgEc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

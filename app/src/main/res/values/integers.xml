@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="board_col_count">3</integer>
+    <integer name="board_row_count">3</integer>
+
+    <integer name="players_col_count">10</integer>
+    <integer name="players_row_count">2</integer>
+
+    <integer name="username_length">10</integer>
+
+</resources>

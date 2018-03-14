@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--Disregard the fact that the textview displays improperly
+        with styling added to it. It works on a real device :)-->
+
+    <TextView
+        style="@style/FunPopupTextStyle"
+
+        android:id="@+id/popupTextView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+</FrameLayout>

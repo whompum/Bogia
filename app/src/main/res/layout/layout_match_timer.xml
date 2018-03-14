@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.younivibes.bogia.Widgets.RTextView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:text="3:00"
+    style="@style/StyleSpecialTextDisplay.StyleOvalText"
+    android:id="@id/id_match_timer">
+
+</com.younivibes.bogia.Widgets.RTextView>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Bogia</string>
+
+    <string name="you">You</string>
+
+    <string name="random_game">Random Game</string>
+    <string name="invite">Invite</string>
+    <string name="AI">AI</string>
+
+    <string name="games_won">Games Won</string>
+    <string name="games_lost">Games Lost</string>
+    <string name="games_tied">Games Tied</string>
+    <string name="nada">0</string>
+
+    <string name="search_here">Search Here</string>
+
+    <string name="user_name">User Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="sign_out">Exit</string>
+
+    <string name="thankyou">Thank you for choosing Bogia</string>
+    <string name="username_length_error">10 Characters Or Less</string>
+    <string name="password_length_error">10 Characters Or Less</string>
+    <string name="empty_text_error">The text can\'t be empty</string>
+    <string name="email_in_use">Email already in use</string>
+    <string name="wrong_username">The username is incorrect</string>
+
+    <string name="you_lost">You\'ve Lost</string>
+    <string name="you_won">You\'ve Won</string>
+    <string name="game_tied">You\'ve Tied</string>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_bogia_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/login_signup_horizontal_offset"
+        android:layout_marginLeft="@dimen/login_signup_horizontal_offset"
+        android:layout_marginEnd="@dimen/login_signup_horizontal_offset"
+        android:layout_marginRight="@dimen/login_signup_horizontal_offset"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <EditText
+        style="@style/StyleSpecialTextDisplay.StyleOvalText.StyleAccountCredentialEditor"
+        android:hint="@string/user_name"
+        android:id="@id/id_username_editor"
+        android:inputType="textPersonName"/>
+
+        <View
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="16dp"/>
+
+        <EditText
+            style="@style/StyleSpecialTextDisplay.StyleOvalText.StyleAccountCredentialEditor"
+            android:hint="@string/email"
+            android:id="@id/id_email_editor"
+            android:inputType="textEmailAddress"/>
+
+        <View
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="16dp"/>
+
+    <EditText
+        style="@style/StyleSpecialTextDisplay.StyleOvalText.StyleAccountCredentialEditor"
+        android:hint="@string/password"
+        android:id="@id/id_password_editor"
+        android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".8"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.younivibes.bogia.Widgets.RTextView
+            style="@style/StyleLoginSignupButton"
+            android:id="@id/id_login_button"
+            android:text="@string/login" />
+
+        <com.younivibes.bogia.Widgets.RTextView
+            style="@style/StyleLoginSignupButton"
+            android:id="@id/id_signup_button"
+            android:text="@string/sign_up" />
+    </LinearLayout>
+
+
+    <!--REPLACE WITH THE STYLE FOR THE STATUS MESSAGES STYLE
+        WHEN I MAKE THEM-->
+
+    <com.younivibes.bogia.Widgets.RTextView
+        android:id="@id/status_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/bogia_orange"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Account Exists!" />
+
+
+</android.support.constraint.ConstraintLayout>

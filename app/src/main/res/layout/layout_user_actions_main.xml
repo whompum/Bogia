@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/id_drawer_user_actions_container"
+    android:padding="@dimen/screen_padding"
+    android:layout_width="220dp"
+    android:layout_height="match_parent">
+
+    <com.younivibes.bogia.Widgets.RTextView
+        android:id="@id/id_drawer_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bogia_blue"
+        android:textSize="28sp"
+        app:RFonts="LIGHT"
+        app:layout_constraintVertical_bias="0.0"
+        android:text="BamGuy" />
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StyleGameStatsValue"
+        android:id="@id/id_drawer_total_matches"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <com.younivibes.bogia.Widgets.RTextView
+        android:id="@id/id_sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+
+
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StyleSpecialTextDisplay.StyleOvalText.StyleNewMatch"
+        android:text="@string/random_game"
+        android:background="@drawable/match_selection_states"
+        android:id="@id/id_random_match"
+        app:layout_constraintVertical_bias="0.3" />
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StyleSpecialTextDisplay.StyleOvalText.StyleNewMatch"
+        android:text="@string/invite"
+        android:id="@id/id_search_match"
+        app:layout_constraintVertical_bias="0.4" />
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StyleSpecialTextDisplay.StyleOvalText.StyleNewMatch"
+        android:text="@string/AI"
+        android:id="@id/id_ai"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+
+
+
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StyleGameStatsLabel"
+        android:id="@id/id_games_won_label"
+        android:text="@string/games_won"
+        android:textColor="@color/bogia_green"
+        app:layout_constraintVertical_bias="0.66"/>
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StyleGameStatsValue"
+        android:id="@id/id_games_won_value"
+        app:layout_constraintVertical_bias="0.72"/>
+
+
+
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StyleGameStatsLabel"
+        android:id="@id/id_games_lost_label"
+        android:text="@string/games_lost"
+        android:textColor="@color/bogia_red"
+        app:layout_constraintVertical_bias="0.80"/>
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StyleGameStatsValue"
+        android:id="@id/id_games_lost_value"
+        app:layout_constraintVertical_bias="0.86"/>
+
+
+
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StyleGameStatsLabel"
+        android:id="@id/id_games_tied_label"
+        android:text="@string/games_tied"
+        android:textColor="@color/bogia_orange"
+        app:layout_constraintVertical_bias="0.94"/>
+    <com.younivibes.bogia.Widgets.RTextView
+        style="@style/StyleGameStatsValue"
+        android:id="@id/id_games_tied_value"
+        app:layout_constraintVertical_bias="1"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

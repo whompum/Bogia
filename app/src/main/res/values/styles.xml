@@ -1,0 +1,165 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="StyleBoardPiece">
+        <item name="android:background">@drawable/circle_silver</item>
+        <item name="android:layout_width">@dimen/piece_size</item>
+        <item name="android:layout_height">@dimen/piece_size</item>
+    </style>
+
+    <style name="StyleBoardPiece.MiddleCol">
+        <item name="android:layout_marginLeft">@dimen/piece_margin</item>
+        <item name="android:layout_marginRight">@dimen/piece_margin</item>
+    </style>
+
+    <style name="StyleBoardPiece.MiddleRow.MiddleRowCol">
+        <item name="android:layout_marginLeft">@dimen/piece_margin</item>
+        <item name="android:layout_marginRight">@dimen/piece_margin</item>
+    </style>
+
+
+    <style name="StyleBoardPiece.MiddleRow">
+        <item name="android:layout_marginTop">@dimen/piece_margin</item>
+        <item name="android:layout_marginBottom">@dimen/piece_margin</item>
+    </style>
+
+
+    <style name="StylePlayerName">
+        <item name="RFonts">LIGHT</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="StyleYouLabel">
+        <item name="RFonts">REGULAR</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:text">@string/you</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="StyleTimelessWave">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="StyleTimelessWave.Start">
+        <item name="android:layout_marginLeft">@dimen/timelessWaveMargin</item>
+    </style>
+
+    <style name="StyleTimelessWave.End">
+        <item name="android:layout_marginRight">@dimen/timelessWaveMargin</item>
+    </style>
+
+
+    <style name="StyleSpecialTextDisplay">
+        <item name="RFonts">REGULAR</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="StyleSpecialTextDisplay.StyleOvalText">
+        <item name="android:background">@drawable/oval_blue</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="StyleSpecialTextDisplay.StyleCircularText">
+        <item name="android:background">@drawable/circle_blue</item>
+    </style>
+
+
+    <style name="StyleSpecialTextDisplay.StyleOvalText.StyleNewMatch">
+        <item name="android:background">@drawable/match_selection_states</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="StyleGameStatsLabel">
+        <item name="RFonts">REGULAR</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+
+    </style>
+
+    <style name="StyleGameStatsValue">
+        <item name="RFonts">LIGHT</item>
+        <item name="android:text">@string/nada</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/bogia_silver</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="StyleSearchHere">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/bogia_silver</item>
+        <item name="android:textColorHint">@color/bogia_silver</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="StyleSpecialTextDisplay.StyleOvalText.StyleAccountCredentialEditor">
+        <item name="android:textSize">@dimen/login_signup_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:paddingTop">@dimen/login_singup_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/login_singup_vertical_padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="StyleLoginSignupButton">
+        <item name="android:background">@drawable/login_signup_states</item>
+        <item name="android:textSize">@dimen/login_signup_text_size</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="FunPopupTextStyle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@drawable/pointed_oval</item>
+    </style>
+
+
+    <style name="StyleDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+
+    </style>
+
+</resources>
