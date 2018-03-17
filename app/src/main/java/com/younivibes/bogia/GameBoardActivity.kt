@@ -1,6 +1,8 @@
 package com.younivibes.bogia
 
+import android.animation.Animator
 import android.content.Intent
+import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.annotation.IntRange
@@ -11,6 +13,7 @@ import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
+import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.EditText
 import android.widget.Toast
@@ -277,7 +280,37 @@ class GameBoardActivity : AppCompatActivity(), GameServer.GameInitializerObserve
     }
 
 
+    /**
+     * Recursively steps through the winning pieces of the board
+     * @param winningPieces: The array containing the index's of the winning pieces
+     * @param index: Which index of the winning pieces board we're at. NOTE this param isn't the child of id_board viewgroup but
+     * of the winning board array
+     */
+    fun animateOnWin(winningPieces: Array<Int>, index: Int){
+        if(index == winningPieces.size)
+            return
 
+        val animation = AnimationUtils.loadAnimation(this, R.anim.shrink_grow)
+
+        animation.setAnimationListener(object: AnimEndList(){
+            override fun onAnimationEnd(animation: Animation?) {
+                animateOnWin(winningPieces, index + 1)
+            }
+        })
+
+        id_board.getChildAt(winningPieces[index]).startAnimation(animation)
+    }
+
+    abstract inner class AnimEndList: Animation.AnimationListener{
+        override fun onAnimationRepeat(animation: Animation?) {
+
+        }
+
+        abstract override fun onAnimationEnd(animation: Animation?)
+
+        override fun onAnimationStart(animation: Animation?) {
+        }
+    }
 
     inner class MyGameInteface: GameInterface() {
 
@@ -319,7 +352,7 @@ class GameBoardActivity : AppCompatActivity(), GameServer.GameInitializerObserve
 
         override fun gameWon(winResult: Referee.WinResult, loser: Player) {
             showStatusMsg( (if(winResult.playerId == userId) R.string.you_won else R.string.you_lost ) )
-
+            animateOnWin(winResult.winningPieces, 0)
         }
 
         override fun gameTied() {
@@ -345,6 +378,10 @@ class GameBoardActivity : AppCompatActivity(), GameServer.GameInitializerObserve
 
 
     }
+
+
+
+
     inner class GameInviteListener: InviteResponse{
         override fun onAccepted(gameRequest: NewGameRequest) {
 
