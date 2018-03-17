@@ -44,6 +44,7 @@ class AI: Player(PieceType.PLAYER_TWO, AI_ID, NAME) {
     }
 
     fun destruct(){
+        Log.i("AI", "Destructing")
         processor.quit()
     }
 
