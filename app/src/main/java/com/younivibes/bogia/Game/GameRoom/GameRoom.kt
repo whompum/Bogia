@@ -37,7 +37,6 @@ class GameRoom(val playerOne: Player, val playerTwo: Player){
     private var observer: GameObserver? = null
     private var timeObserver: TimeObserver? = null
 
-    private var countDownTimer: CountDownTimer? = null
     private var matchTimer: CountDownTimer? = null
 
 
@@ -135,6 +134,9 @@ class GameRoom(val playerOne: Player, val playerTwo: Player){
     }
 
     private fun handleGameStateChange(state: Int){
+        if(state == GAME_STATE_END)
+             matchTimer?.cancel()
+                    
         observer?.onGameStateChanged(state)
     }
 
@@ -156,7 +158,7 @@ class GameRoom(val playerOne: Player, val playerTwo: Player){
         override fun onFinish() {
             gameIsActive = true
 
-            GameTimer().start()
+            this@GameRoom.matchTimer = GameTimer().start()
 
             handleGameStateChange(GAME_STATE_STARTED)
         }

@@ -11,6 +11,8 @@ class FirebaseSchema {
         const val NAME = "name"
         const val UID = "userId"
 
+        const val INVITE_PREFIX = "MATCH_REQUESTER@"
+
         const val AVAILABLE_USERS = "onlineUsers"
         const val IS_SEARCHING = "isSearching"
         const val IS_IN_GAME= "isInGame"

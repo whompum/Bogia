@@ -61,26 +61,10 @@ class AIServer: GameServer.GameInitializerObserver {
                     player.destruct()
         }
 
-        override fun gameWon(winResult: Referee.WinResult, loser: Player) {
-
-        }
-
-        override fun gameTied() {
-        }
-
         override fun onBoardChanged(board: Array<GamePiece>) {
             player.onBoardChange(board)
         }
 
-        override fun newMatchTimer(timeLeft: Long) {
-        }
-
-        override fun newCountDown(timeLeft: Long) {
-        }
-
-        override fun onConnected() {
-
-        }
     }
 
 }

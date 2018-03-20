@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="64dp"
+    android:paddingEnd="64dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="64dp"
+    android:paddingBottom="64dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.younivibes.bogia.Widgets.RTextView
+        android:layout_gravity="center"
+        android:maxWidth="300dp"
+        android:text="@string/you_lost"
+        android:id="@+id/id_status_ontainer"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/bogia_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

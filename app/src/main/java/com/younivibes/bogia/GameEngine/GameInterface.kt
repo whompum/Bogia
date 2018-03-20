@@ -8,23 +8,31 @@ import com.younivibes.bogia.GameEngine.GameEngines.OnSyncStateChange
 import com.younivibes.bogia.Players.Player
 
 /**
+ * STUB IMPLEMENTATIONS of the various game state callbacks
  * Created by bryan on 2/23/2018.
  */
-abstract class GameInterface: GameObserver, TimeObserver, OnSyncStateChange {
+open class GameInterface: GameObserver, TimeObserver, OnSyncStateChange {
 
-    abstract override fun newMatchTimer(timeLeft: Long)
+    override fun newMatchTimer(timeLeft: Long){}
 
-    abstract override fun onConnected()
+    override fun onConnected(){}
 
-    abstract  override fun newCountDown(timeLeft: Long)
 
-    abstract  override fun onGameStateChanged(newState: Int)
+    override fun newCountDown(timeLeft: Long){}
 
-    abstract  override fun gameWon(winResult: Referee.WinResult, loser: Player)
 
-    abstract  override fun gameTied()
+    override fun onGameStateChanged(newState: Int){}
 
-    abstract  override fun onBoardChanged(board: Array<GamePiece>)
 
-    abstract  override fun onPieceFlipped(newCurrentPlayer: Player, lastPlayer: Player, index: Int)
+    override fun gameWon(winResult: Referee.WinResult, loser: Player){}
+
+
+    override fun gameTied(){}
+
+
+    override fun onBoardChanged(board: Array<GamePiece>){}
+
+
+    override fun onPieceFlipped(newCurrentPlayer: Player, lastPlayer: Player, index: Int){}
+
 }

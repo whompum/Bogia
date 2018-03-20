@@ -8,4 +8,8 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="CellView">
+        <attr name="index" format="integer"/>
+    </declare-styleable>
+
 </resources>

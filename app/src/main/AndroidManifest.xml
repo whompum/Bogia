@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GameBoardActivity"/>
+        <activity android:name=".Bogia.GameBoardActivity"/>
 
-        <activity android:name=".LoginSignupActivity"
+        <activity android:name=".Bogia.LoginSignupActivity"
                   android:screenOrientation="portrait"
                   android:noHistory="true">
 

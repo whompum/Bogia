@@ -1,6 +1,5 @@
 package com.younivibes.bogia.GameEngine
 
-import android.content.Context
 import com.younivibes.bogia.GameEngine.GameHandlers.ClientGameHandler
 import com.younivibes.bogia.GameEngine.GameInvites.InviteResponse
 import com.younivibes.bogia.GameEngine.GameInvites.Inviter
@@ -29,7 +28,6 @@ class GameServer(g: GameInitializerObserver): OnSyncServerInit {
          * it to the user. If the user responds, our registered callbacks will be triggered
          * Which will either start a notify the client, comienzo un nuevo juego, establish connection
          */
-
     }
 
     fun requestNewLocalGame(gameRequest: NewGameRequest, inviteResponse: InviteResponse){

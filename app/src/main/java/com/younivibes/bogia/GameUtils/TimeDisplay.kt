@@ -9,7 +9,7 @@ class TimeDisplay {
 
         private val timeFormatter = StringBuilder()
 
-        fun format(m: Long): String{
+        fun formatMMSS(m: Long): String{
             timeFormatter.delete(0, timeFormatter.length)
 
             val min = m / 1000 / 60
@@ -23,6 +23,7 @@ class TimeDisplay {
 
           return  minText+secText
         }
+
 
     }
 

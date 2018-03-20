@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:columnCount="@integer/board_col_count"
     android:rowCount="@integer/board_row_count"
     android:id="@id/id_board"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <View style="@style/StyleBoardPiece" android:id="@id/zero"/>
-    <View style="@style/StyleBoardPiece.MiddleCol" android:id="@id/one"/>
-    <View style="@style/StyleBoardPiece" android:id="@id/two"/>
+    <com.younivibes.bogia.Widgets.CellView style="@style/StyleBoardPiece" app:index="@integer/zero" />
+    <com.younivibes.bogia.Widgets.CellView style="@style/StyleBoardPiece.MiddleCol" app:index="@integer/one"/>
+    <com.younivibes.bogia.Widgets.CellView style="@style/StyleBoardPiece" app:index="@integer/two"/>
 
-    <View style="@style/StyleBoardPiece.MiddleRow" android:id="@id/three"/>
-    <View style="@style/StyleBoardPiece.MiddleRow.MiddleRowCol" android:id="@id/four"/>
-    <View style="@style/StyleBoardPiece.MiddleRow" android:id="@id/five"/>
+    <com.younivibes.bogia.Widgets.CellView style="@style/StyleBoardPiece.MiddleRow" app:index="@integer/three" />
+    <com.younivibes.bogia.Widgets.CellView style="@style/StyleBoardPiece.MiddleRow.MiddleRowCol" app:index="@integer/four"/>
+    <com.younivibes.bogia.Widgets.CellView style="@style/StyleBoardPiece.MiddleRow" app:index="@integer/five"/>
 
-    <View style="@style/StyleBoardPiece" android:id="@id/six"/>
-    <View style="@style/StyleBoardPiece.MiddleCol" android:id="@id/seven"/>
-    <View style="@style/StyleBoardPiece" android:id="@id/eight"/>
+    <com.younivibes.bogia.Widgets.CellView style="@style/StyleBoardPiece" app:index="@integer/six"/>
+    <com.younivibes.bogia.Widgets.CellView style="@style/StyleBoardPiece.MiddleCol" app:index="@integer/seven"/>
+    <com.younivibes.bogia.Widgets.CellView style="@style/StyleBoardPiece" app:index="@integer/eight"/>
+
 
 </GridLayout>

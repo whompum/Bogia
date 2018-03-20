@@ -2,6 +2,7 @@
 <GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_players_container"
     android:layout_gravity="bottom"
     android:columnCount="@integer/players_col_count"
     android:rowCount="@integer/players_row_count"

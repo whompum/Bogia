@@ -2,10 +2,7 @@ package com.younivibes.bogia.GameEngine.GameHandlers
 
 import android.support.annotation.NonNull
 import android.util.Log
-import com.younivibes.bogia.Game.GameRoom.GamePiece
-import com.younivibes.bogia.Game.GameRoom.GameObserver
-import com.younivibes.bogia.Game.GameRoom.Referee
-import com.younivibes.bogia.Game.GameRoom.TimeObserver
+import com.younivibes.bogia.Game.GameRoom.*
 import com.younivibes.bogia.GameEngine.GameEngines.OnSyncStateChange
 import com.younivibes.bogia.GameEngine.GameInterface
 import com.younivibes.bogia.GameEngine.Requests.MoveRequest
@@ -27,6 +24,7 @@ class ClientGameHandler internal constructor(private val synchronizer: GameBoard
 
     var gameInterface: GameInterface? = null
 
+    var isGameActive: Boolean = false
 
     /**
      * Parses the Request type is called by the client in this instance
@@ -50,6 +48,10 @@ class ClientGameHandler internal constructor(private val synchronizer: GameBoard
     }
 
     override fun onGameStateChanged(newState: Int) {
+        if(newState == GameRoom.GAME_STATE_STARTED)
+            isGameActive = true
+        if(newState == GameRoom.GAME_STATE_END)
+            isGameActive = false
         gameInterface?.onGameStateChanged(newState)
     }
 

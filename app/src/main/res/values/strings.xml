@@ -29,6 +29,11 @@
     <string name="email_in_use">Email already in use</string>
     <string name="wrong_username">The username is incorrect</string>
 
+    <string name="signout_alert_title">Sign Out</string>
+    <string name="signout_alert_msg">Sign out of Bogia?</string>
+
+
+
     <string name="you_lost">You\'ve Lost</string>
     <string name="you_won">You\'ve Won</string>
     <string name="game_tied">You\'ve Tied</string>

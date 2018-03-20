@@ -3,7 +3,6 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
 
     <style name="StyleBoardPiece">
-        <item name="android:background">@drawable/circle_silver</item>
         <item name="android:layout_width">@dimen/piece_size</item>
         <item name="android:layout_height">@dimen/piece_size</item>
     </style>

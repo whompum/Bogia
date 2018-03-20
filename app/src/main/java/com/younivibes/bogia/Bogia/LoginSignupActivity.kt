@@ -1,29 +1,20 @@
-package com.younivibes.bogia
+package com.younivibes.bogia.Bogia
 
 import android.animation.Animator
 import android.content.Intent
 import android.os.Bundle
-import android.support.annotation.NonNull
 import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.*
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
-import com.google.firebase.storage.FirebaseStorage
 import com.younivibes.bogia.Account.Account
 import com.younivibes.bogia.Account.AccountSignup
 import com.younivibes.bogia.Account.AccountSignupResult
-import com.younivibes.bogia.Players.UserStats
-import com.younivibes.bogia.Players.UserStatsJsonFactory
-import com.younivibes.bogia.Players.UserStatsJsonFactory.Companion.getUserFileData
+import com.younivibes.bogia.R
 
 import com.younivibes.bogia.Widgets.FunPopup
 

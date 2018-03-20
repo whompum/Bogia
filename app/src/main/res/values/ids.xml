@@ -31,6 +31,7 @@
 
     <item name="id_sign_out" type="id"/>
 
+    <item name="id_players_container" type="id"/>
     <item name="id_player_one_you_label" type="id"/>
     <item name="id_player_two_you_label" type="id"/>
     <item name="id_player_one" type="id"/>
